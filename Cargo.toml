@@ -1,0 +1,10 @@
+[workspace]
+members = [
+    "ex",
+]
+
+[profile.dev]
+panic = "abort" # Avoid libunwind to be linked
+
+[profile.release]
+panic = "abort" # Avoid libunwind to be linked
